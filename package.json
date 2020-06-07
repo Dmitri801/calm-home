@@ -1,0 +1,14 @@
+{
+  "name": "my-home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm run client --prefix client",
+    "server": " nodemon server/index.js --ignore client",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
