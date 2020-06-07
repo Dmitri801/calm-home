@@ -1,7 +1,14 @@
 <script>
-export let canIBreathe;
+
 </script>
 
 <main>
- {canIBreathe ? "I can" :  ""}
+    <h2>AYYYYYY BREATHE</h2>
 </main>
+
+<style>
+main {
+    color: #fff;
+    position: absolute;
+}
+</style>

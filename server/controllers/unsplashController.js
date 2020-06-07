@@ -9,7 +9,9 @@ const getRandomMeditative = async (request, reply) => {
 
   const image = data.results[getRandIndex(data.results)];
 
-  reply.send(image);
+  reply
+  .header("Access-Control-Allow-Origin", "*")
+  .send(image);
 }
 
 module.exports = {

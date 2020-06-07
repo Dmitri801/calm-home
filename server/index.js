@@ -6,6 +6,8 @@ const fastify = require('fastify')({
   });
 const unsplashController = require("./controllers/unsplashController");
 
+fastify.register(require('fastify-cors'), { origin: "*"})
+
 // Routes
 fastify.get("/api", (request, reply) => reply.send({up: "Yes we are up"}))
 fastify.get('/api/unsplash/get-random-meditative', unsplashController.getRandomMeditative); 
